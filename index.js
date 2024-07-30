@@ -1,20 +1,8 @@
-let fruits = ["apple","orange","banana","coconut"];
+let numbers = [1,2,3,4,5];
+let display = numbers.map(doubleNumber);
 
-fruits.forEach(upperCase);
-fruits.forEach(display);
+console.log(display);
 
-function upperCase(element,index,array){
-  array[index] = element.toUpperCase();
-}
-function lowerCase(element,index,array){
-    array[index] = element.toLowerCase();
-  
-}
-function capitalize(element,index,array){
-  array[index] = element.charAT(0).toUpperCase()+element.slice(1);
-
-}
-
-function display(element){
-  console.log(element);
+function doubleNumber (element){
+  return element*2;
 }
