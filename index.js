@@ -1,9 +1,18 @@
-let numbers = [1,2,3,4,5];
-numbers.forEach(double);
-numbers.forEach(display);
+let fruits = ["apple","orange","banana","coconut"];
 
-function double(element,index,array){
-  array[index] = element*2;
+fruits.forEach(upperCase);
+fruits.forEach(display);
+
+function upperCase(element,index,array){
+  array[index] = element.toUpperCase();
+}
+function lowerCase(element,index,array){
+    array[index] = element.toLowerCase();
+  
+}
+function capitalize(element,index,array){
+  array[index] = element.charAT(0).toUpperCase()+element.slice(1);
+
 }
 
 function display(element){
