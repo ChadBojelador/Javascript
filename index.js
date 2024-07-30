@@ -1,7 +1,11 @@
-function process () {
-  let x= 34233;
-  let reverseNum = String(x).split(``).reverse().join();
-  console.log (reverseNum);
+let numbers = [1,2,3,4,5];
+numbers.forEach(double);
+numbers.forEach(display);
+
+function double(element,index,array){
+  array[index] = element*2;
 }
 
-process();
+function display(element){
+  console.log(element);
+}
